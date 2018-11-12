@@ -3,54 +3,115 @@
   <head>
     <title>Home Page</title>
       <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   </head>
   <body>
-    <img src="images/99.jpg" alt="blogpic" class="headimg">
-    <nav class="topnav">
-      <a class="active" href="index.html">Home</a>
-      <a href="index.html">Reviews</a>
-      <a href="index.html">Contact Us</a>
-    </nav>
-    <nav class="sidenav">
-      <ul class="sidenavlist">
-        <li><a class="active" href="SecondPage.html">Motivation</a></li>
-        <li><a href="SecondPage.html">Procastination</a></li>
-        <li><a href="SecondPage.html">Habits</a></li>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"> </li>
+        <li data-terget="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
       </ul>
-      <ul class="sidenavlist">
-        <li><a href="SecondPage.html">Terms of use</a></li>
-        <li><a href="SecondPage.html">FAQ</a></li>
-      </ul>
-    </nav>
-    <article>
-      <h3>Motivation</h3>
-      <a href="SecondPage.html">
-        <img src="images/93.jpg" alt="motivation" class="imgformat1">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/99.jpg" alt="blogpic" class="headimg">
+        </div>
+        <div class="carousel-item">
+          <img src="images/100.jpg" alt="blogpic1" class="headimg">
+        </div>
+        <div class="carousel-item">
+          <img src="images/101.jpg" alt="blogpic3" class="headimg">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#demo" data-slide"prev">
+        <span class="carousel-control-prev-icon"> </span>
       </a>
-      <p>Motivation is a powerful, yet tricky beast. Sometimes it is really easy to get motivated, and you find yourself wrapped up in a whirlwind of excitement. Other times, it is nearly impossible to figure out how to motivate yourself and you're trapped in a death spiral of procrastination. This page contains the best ideas and most useful research on how to get and stay motivated.</p>
-    </article>
-    <article>
-      <h3>Productivity</h3>
-      <a href="SecondPage.html">
-        <img src="images/94.jpg" alt="productivity" class="imgformat1">
+      <a class="carousel-control-next" href="#demo" data-slide"next">
+        <span class="carousel-control-next-icon"> </span>
       </a>
-      <p>Let's define productivity. Productivity is a measure of efficiency of a person completing a task. We often assume that productivity means getting more things done each day. Wrong. Productivity is getting important things done consistently. And no matter what you are working on, there are only a few things that are truly important.</p>
-    </article>
-    <article>
-      <h3>Goal setting</h3>
-      <a href="SecondPage.html">
-        <img src="images/95.jpg" alt="goalsetting" class="imgformat1">
-      </a>
-      <p>Goal setting is everywhere in our world. We set goals for our careers, our health, and our lives in general. It seems modern society is always encouraging us to think about the next milestone. However, what we don't think about enough is the science and strategy of how to accomplish your goals. That's what this guide is here to do.</p>
-    </article>
-    <nav class="pages">
-      <a href="index.html">1</a>
-      <a href="SecondPage.html">2</a>
-      <a href="SecondPage.html">3</a>
-      <a href="SecondPage.html">4</a>
-      <a href="SecondPage.html">5</a>
-      <a href="SecondPage.html">6</a>
-      <a href="SecondPage.html">7</a>
-    </nav>
+    </div>
+    <div class="wrapper">
+      <nav id="sidebar" >
+        <div class="sidebar-header">
+          <h3>Side Nav</h3>
+        </div>
+        <ul class="list-unstyled components">
+          <li class="active">
+            <a class="active" href="SecondPage.html">Motivation</a>
+          </li>
+          <li>
+            <a href="SecondPage.html">Procastionation</a>
+          </li>
+          <li>
+            <a href="SecondPage.html">Habits</a>
+          </li>
+        </ul>
+        <ul class="list-unstyled CTAs">
+          <li>
+            <a href="SecondPage.html" class="download">Terms of use</a>
+          </li>
+          <li>
+            <a href="SecondPage.html" class="article">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+              <span>=</span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Reviews</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <h2>Motivation</h2>
+        <a href="SecondPage.html">
+          <img src="images/93.jpg" alt="motivation" class="imgformat1">
+        </a>
+        <p>Motivation is a powerful, yet tricky beast. Sometimes it is really easy to get motivated, and you find yourself wrapped up in a whirlwind of excitement. Other times, it is nearly impossible to figure out how to motivate yourself and you're trapped in a death spiral of procrastination. This page contains the best ideas and most useful research on how to get and stay motivated.</p>
+        <div class="line"></div>
+        <h2>Productivity</h2>
+        <a href="SecondPage.html">
+          <img src="images/94.jpg" alt="productivity" class="imgformat1">
+        </a>
+        <p>Let's define productivity. Productivity is a measure of efficiency of a person completing a task. We often assume that productivity means getting more things done each day. Wrong. Productivity is getting important things done consistently. And no matter what you are working on, there are only a few things that are truly important.</p>
+        <div class="line"></div>
+        <h2>Goal Setting</h2>
+        <a href="SecondPage.html">
+          <img src="images/95.jpg" alt="goalsetting" class="imgformat1">
+        </a>
+        <p>Goal setting is everywhere in our world. We set goals for our careers, our health, and our lives in general. It seems modern society is always encouraging us to think about the next milestone. However, what we don't think about enough is the science and strategy of how to accomplish your goals. That's what this guide is here to do.</p>
+        <nav class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="index.html">Previous</a>
+          <li class="page-item"><a class="page-link" href="index.html">1</a>
+          <li class="page-item"><a class="page-link" href="SecondPage.html">2</a>
+          <li class="page-item"><a class="page-link" href="SecondPage.html">3</a>
+          <li class="page-item"><a class="page-link" href="SecondPage.html">Next</a>
+        </nav>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
   </body>
 </html>
